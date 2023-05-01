@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import '@/styles/app.css';
+
 
 import TodoApp from '@/components/TodoApp';
 

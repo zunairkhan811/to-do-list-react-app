@@ -1,7 +1,7 @@
 const Header = () => {
     return (
       <header>
-        <h1>todos</h1>
+        <h1>Todos</h1>
         <p>Items will persist in the browser local storage</p>
       </header>
     );
