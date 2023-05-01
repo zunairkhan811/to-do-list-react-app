@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { FaTrash } from "react-icons/fa";
+import { AiFillEdit } from "react-icons/ai";
+
 const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate}) => {
     const [updateInput, setUpdateInput] = useState(itemProp.title);
     const [editing, setEditing] = useState(false);
@@ -18,19 +21,27 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate}) => {
           setEditing(false);
         }
       };
+      const completedStyle = {
+        fontStyle: 'italic',
+        color: '#595959',
+        opacity: 0.4,
+        textDecoration: 'line-through',
+      };
 
     return (
         <li className='list'>
-            <div style={viewMode}>
+         <div style={viewMode}>
             <input
             type="checkbox"
             checked={itemProp.completed}
             onChange={() => handleChange(itemProp.id)}
           />
-        <button className = 'edit' onClick={handleEditing}>Edit</button>
-        <button className = 'delete' onClick={() => delTodo(itemProp.id)}>Delete</button>
+          <button className = 'delete' onClick={() => delTodo(itemProp.id)}><FaTrash /></button>
+          <button className = 'edit' onClick={handleEditing}><AiFillEdit /></button>
+          <span style={itemProp.completed ? completedStyle : null}>
           {updateInput}
-            </div>
+          </span>
+         </div>
           
           <input
             type="text"
