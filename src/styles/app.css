@@ -34,6 +34,7 @@
     border-radius: calc(0.1 * 100px);
     box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.38);
     justify-content: space-around;
+    margin-bottom: 10px;
     background: #fff;
     font-size: 1rem;
   }
@@ -83,7 +84,8 @@
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(220, 118, 118);
-    margin: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: calc(0.1 * 100px);
     box-shadow: 0px 4px 14px 0px rgba(220, 118, 118, 0.38);
     background: #fff;
@@ -100,18 +102,14 @@
 
   .edit,.delete{
     float: right;
-    /* padding: 3px; */
     margin: auto 8px;
     color: #f36c6c;
     font-size: 16px;
     border: none;
-    /* border-radius: 4px; */
-    /* background: #dc7676; */
     cursor: pointer;
     background: none;
   }
   .edit{
-    /* width: 50px; */
     color: #5e5e5e;
     font-size: 19px;
     
