@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaTrash } from "react-icons/fa";
 import { AiFillEdit } from "react-icons/ai";
+import PropTypes from 'prop-types'
 
 const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate}) => {
     const [updateInput, setUpdateInput] = useState(itemProp.title);
@@ -54,5 +55,18 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate}) => {
         </li>
       );
   };
+
+  TodoItem.propTypes = {
+    handleChange : PropTypes.string
+  }
+  TodoItem.propTypes = {
+    delTodo : PropTypes.string
+  }
+  TodoItem.propTypes = {
+    setUpdate : PropTypes.string
+  }
+  TodoItem.propTypes = {
+    itemProp : PropTypes.object
+  }
   export default TodoItem;
   

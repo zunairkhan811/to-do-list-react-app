@@ -1,116 +1,130 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: "Segoe UI", sans-serif;
-    line-height: 1.4;
-    color: #000;
-    background: #fff;
-    height: 100vh;
-    font-weight: 400;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .wrapper {
-    width: 100%;
-    padding: 8rem 20px 3rem;
-  }
-  .todos {
-    max-width: 580px;
-    margin: 0 auto;
-  }
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.4;
+  color: #000;
+  background: #fff;
+  height: 100vh;
+  font-weight: 400;
+}
 
-  header h1,header p{
-    justify-content: center;
-    display: flex;
-    /* margin: auto; */
-  }
-  header p {
-    margin-bottom: 40px;
-  }
-  .form-container {
-    display: flex;
-    border-radius: calc(0.1 * 100px);
-    box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.38);
-    justify-content: space-around;
-    margin-bottom: 10px;
-    background: #fff;
-    font-size: 1rem;
-  }
-  .input-text {
-    width: 85%;
-    padding-right: 5px;
-    padding-left: 10px;
-    border-radius: calc(0.5 * 100px);
-    font-size: 1rem;
-  }
-  .input-text::placeholder {
-    color: #000;
-  }
-  .input-submit {
-    background: transparent;
-    color: #db4a4a;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 10px;
-  }
-  .input-submit svg {
-    color: #f36c6c;
-    font-size: 20px;
-    margin-top: 2px;
-  }
-  .input-text,
-  .input-submit {
-    height: 45px;
-    outline: none;
-    border: none;
-  }
-  .submit-warning {
-    font-size: 13px;
-    color: red;
-    margin-top: 5px;
-    display: block;
-  }
-  
-  .textInput {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #dfdfdf;
-    outline: none;
-  }
+.wrapper {
+  width: 100%;
+  padding: 8rem 20px 3rem;
+}
 
-  .list{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(220, 118, 118);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: calc(0.1 * 100px);
-    box-shadow: 0px 4px 14px 0px rgba(220, 118, 118, 0.38);
-    background: #fff;
-    font-size: 1rem;
-    list-style: none;
-  }
+.todos {
+  max-width: 580px;
+  margin: 0 auto;
+}
 
-  .list input{
-    margin-right: 12px;
-  }
-  .completedStyle{
-    text-decoration: line-through;
-  }
+header h1,
+header p {
+  justify-content: center;
+  display: flex;
 
-  .edit,.delete{
-    float: right;
-    margin: auto 8px;
-    color: #f36c6c;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background: none;
-  }
-  .edit{
-    color: #5e5e5e;
-    font-size: 19px;
-    
-  }
+  /* margin: auto; */
+}
+
+header p {
+  margin-bottom: 40px;
+}
+
+.form-container {
+  display: flex;
+  border-radius: calc(0.1 * 100px);
+  box-shadow: 0 4px 14px 0 rgba(70, 70, 70, 0.38);
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.input-text {
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
+  font-size: 1rem;
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #db4a4a;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.input-submit svg {
+  color: #f36c6c;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.submit-warning {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px;
+  display: block;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+}
+
+.list {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(220, 118, 118);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: calc(0.1 * 100px);
+  box-shadow: 0 4px 14px 0 rgba(220, 118, 118, 0.38);
+  background: #fff;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.list input {
+  margin-right: 12px;
+}
+
+.completedStyle {
+  text-decoration: line-through;
+}
+
+.edit,
+.delete {
+  float: right;
+  margin: auto 8px;
+  color: #f36c6c;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.edit {
+  color: #5e5e5e;
+  font-size: 19px;
+}

@@ -1,4 +1,5 @@
 import TodoItem from '@/components/TodoItem';
+import PropTypes from 'prop-types'
 const TodosList = ({ todosProps, handleChange, delTodo, setUpdate }) => {
     return (
       <ul>
@@ -8,5 +9,18 @@ const TodosList = ({ todosProps, handleChange, delTodo, setUpdate }) => {
       </ul>
     );
   };
+
+  TodosList.propTypes = {
+    handleChange : PropTypes.string
+  }
+  TodosList.propTypes = {
+    delTodo : PropTypes.string
+  }
+  TodosList.propTypes = {
+    setUpdate : PropTypes.string
+  }
+  TodosList.propTypes = {
+    todosProps : PropTypes.array
+  }
   export default TodosList;
   

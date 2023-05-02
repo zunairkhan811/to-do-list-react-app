@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaPlusCircle } from "react-icons/fa"
+import PropTypes from 'prop-types'
 const InputTodo = ({ addTodoItem }) => {
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
@@ -31,6 +32,10 @@ const InputTodo = ({ addTodoItem }) => {
     </>
   );
 };
+
+InputTodo.propTypes = {
+  addTodoItem : PropTypes.func
+}
 export default InputTodo;
 
   
