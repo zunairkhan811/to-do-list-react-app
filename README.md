@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [coming soon](#)
+- [Link](https://zunairkhan811.github.io/to-do-list-react-app/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
